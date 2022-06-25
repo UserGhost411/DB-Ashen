@@ -1,0 +1,17 @@
+{
+    "timezone":"Asia/Jakarta",
+    "backups": [
+        {
+            "name": "Example Backup",
+            "cron": "0 55 8 * * *",
+            "active": true,
+            "compress":false,
+            "server": {
+                "host": "localhost",
+                "user": "root",
+                "password": "",
+                "database": "example"
+            }
+        }
+    ]
+}
