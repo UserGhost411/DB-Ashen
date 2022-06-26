@@ -46,7 +46,7 @@ fs.readFile('config.json', (err, data) => {
                 let filepath = `./backup/${db_con.database}-${new Date().getTime()}.${((config.compress)?'sql.gz':'sql')}`;
                 print_log(`Backup ${db_con.host}@${db_con.database} Starting`);
                 mysqldump({
-                    connection: db_con, dumpToFile: filepath, compressFile: config.compress,
+                    connection: db_con, dumpToFile: filepath, compressFile: config.compress,dump: {data: { format : false}}
                 }).then(function () {
                     print_log(`Backup ${db_con.host}@${db_con.database} Saved at ${filepath}`);
                     if(gdrive!=null && config.upload && gdrive_folder!=""){
