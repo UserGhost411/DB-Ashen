@@ -1,14 +1,21 @@
 {
     "timezone":"Asia/Jakarta",
+    "gdrive":{
+        "enabled":false,
+        "authkey":"./service-account.json",
+        "folderid":"googl_drive_folder_id_that_allow_service_account_to_upload"
+    },
     "backups": [
         {
             "name": "Example Backup",
             "cron": "0 55 8 * * *",
             "active": true,
             "compress":false,
+            "upload": false,
             "server": {
                 "host": "localhost",
                 "user": "root",
+                "port": 3306,
                 "password": "",
                 "database": "example"
             }
