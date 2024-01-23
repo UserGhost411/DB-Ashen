@@ -3,6 +3,7 @@ This project is a Node.js application that enables the user to schedule periodic
 # Requirement
 - Nodejs Version 12 to 16 (12.x.x,13.x.x,14.x.x,16.x.x)
 - Internet Connection
+- Install Dependencies
 # Dependencies
 thanks to all author of dependency below
 - [Cron](https://www.npmjs.com/package/cron)
